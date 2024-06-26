@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Nav.css";
 
 function Nav() {
@@ -13,11 +13,12 @@ function Nav() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll");
+    window.addEventListener("scroll", transitionNavBar);
+    return () => window.removeEventListener("scroll", transitionNavBar);
   }, []);
 
   return (
-    <div className="nav nav__black">
+    <div className={`nav ${show && "nav__black"}`}>
       <div className="nav__contents">
         <img
           className="nav__logo"
