@@ -7,7 +7,7 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftelevision.mxdwn.com%2Fwp-content%2Fuploads%2F2015%2F08%2Fnetflix-banner.jpg&f=1&nofb=1&ipt=3f75ea8d91aa99e3f4f22637e901f24b42cc5c74a17270e06b07398c2edfd02c&ipo=images')`,
+        backgroundImage: `url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.acemetrix.com%2Fwp-content%2Fuploads%2F2015%2F08%2Fblack-banner-vector21.png&f=1&nofb=1&ipt=7b5950bf649a22c6313e728aa198ea9ddfa7b4f12ca3650cf46ac759071fa52c&ipo=images')`,
         backgroundPosition: "center center",
       }}
     >
@@ -20,7 +20,7 @@ function Banner() {
         <h1 className="banner__description">This is a test description</h1>
       </div>
 
-      <div className="banner--fadeBottom"></div>
+      <div className="banner--fadeBottom">Test</div>
     </header>
   );
 }
