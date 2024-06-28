@@ -11,11 +11,18 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
       setMovies(request.data.results);
       return request;
     }
+    fetchData();
   }, [fetchUrl]);
+
+  console.log(movies);
 
   return (
     <div className="row">
       <h2>{title}</h2>
+
+      {movies.map((movie) => (
+        <img src={``} alt="" />
+      ))}
     </div>
   );
 }
